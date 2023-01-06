@@ -6,7 +6,7 @@
 
 <body style= "background-color:Blue;">
 
-<h1 style="background-color:Tomato;">Tomato</h1>
+<h1 style="background-color:Tomato;">My Website</h1>
 
 </body>
 </html>
