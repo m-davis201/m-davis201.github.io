@@ -29,7 +29,8 @@ ul li {
 }
 
 ul li a {
-text-decoration: none;
+  display: block;
+  text-decoration: none;
   font-size: 14px;
   font-family: arial;
   color: #1e1e1e;
