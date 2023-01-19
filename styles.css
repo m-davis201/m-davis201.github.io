@@ -36,3 +36,7 @@ ul li a {
   color: #1e1e1e;
   padding: 0 20px;
 }
+
+ul li a:hover {
+  color: green;
+}
