@@ -1,14 +1,9 @@
 <!DOCTYPE html>
 <html>
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="C:\Users\mattd\OneDrive\Desktop\programming\HTML\Work\styles.css">
 <head>
-</head>
-
-<title>Lincoln Grocery Delivery</title>
-<body>
   
-  
-  <nav>
+   <nav>
     <ul>
       <li><a href ="index.html">Home</a></li>
       <li><a href ="contact.html">Contact Us</a></li>
@@ -17,14 +12,36 @@
       
     </ul>
   </nav>
-
-<h1>Grocery Delivery Home</h1>
-<h3><a href="https://super-saver.com/">Super Saver Link</a></h3>
-<h3><a href ="https://hy-vee.com/">Hyvee Link</a></h3>
   
-  <p>
-    Thank you for visiting!
-  </p>
+</head>
+
+<title>Welcome to our Grocery Delivery Service</title>
+<body>
+  <article class = "regular">
+	<h2>Grocery Item</h2>
+	
+	<label for="tbuser">Grocery Item</label>
+	<input type="text" id="tbuser" placeholder="Enter Grocery Item">
+	
+	<input type="button" id="btn1" value="Add Item">
+
+	<p class="output" id="output1"></p>
+
+<script>
+	const txt1 = document.getElementById('tbuser');
+	const btn1 = document.getElementById('btn1');
+	const out1 = document.getElementById('output1');
+	const itemList = [];
+
+	function fun1(){
+		itemList.push(txt1.value);
+		out1.innerHTML = itemList;
+    }
+
+	btn1.addEventListener('click', fun1);
+	
+
+</script>
 
 </body>
 </html>
