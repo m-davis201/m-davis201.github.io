@@ -1,19 +1,20 @@
 const txt1 = document.getElementById('tbuser');
 const btn1 = document.getElementById('btn1');
-const btn2 = document.getElementById('btn2');
 const out1 = document.getElementById('output1');
-const ol = document.getElementById("first-ol");
 const itemArray = [];
+
+function addItem(){
+    let template = itemArray.map(item => `<li>${item}</li>`).join('\n');
+    document.querySelector('ol').innerHTML = template;
+
+}
+
 
 
 function fun1(){
 	itemArray.push(txt1.value);
-    itemArray.forEach(function(e){
-        const li =
-        document.createElement('li');
-        li.innerText = e;
-        ol.append(li)
-    })
+    txt1.value = '';
+    addItem();
 }
 
 
