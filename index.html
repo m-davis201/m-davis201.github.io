@@ -12,21 +12,42 @@
     <h2>Welcome</h2>
   <div>
 
+<!--navigation bar-->
   <div class="topnav">
     <a href ="index.html">Home</a>
     <a href ="contact.html">Contact Us</a>
     <a href ="about.html">About Us</a>
     <a href ="order.html">Buy Groceries!</a>
   </div>
-  
-	
-  <div>
-    <label for="tbuser">Grocery Item</label>
-	  <input type="text" id="tbuser" placeholder="Enter Grocery Item">
-	  <input type="button" id="btn1" value="Add Item">
-	  <ol></ol>
-    <input type="button" id="btn2" value="Submit List">
-  </div>
+<p>Thank you for your patience with the progression of the website and this grocery delivery service. If you encounter any errors, have questions
+  or would like to offer feedback to our service please visit our contact page. All your feedback is essential and greatly appreciated. Thank You!!
+</p>
+ <!-- form tag for php link-->
+	<form action="connect.php" method="post">
+    <div>
+      <label for="groceryItem1">Grocery Item 1 </label>
+      <input type="text" id="groceryItem1" name="groceryItem1" placeholder="Type item here">
+    </div>
+    
+    <div>
+      <label for="groceryItem2">Grocery Item 2 </label>
+      <input type="text" id="groceryItem2" name="groceryItem2" placeholder="Type item here">
+    </div>
+    
+    <br>
+
+    <div>
+      <input type="reset">
+    </div>
+
+    <br>
+
+
+    <div>
+      <input type="submit">
+    </div>
+
+  </form>
 
     
   <script src="script.js">
