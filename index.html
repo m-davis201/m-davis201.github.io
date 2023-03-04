@@ -99,8 +99,92 @@
     <div>
       <label for="groceryItem1">Grocery Item 1 </label>
       <input type="text" id="groceryItem1" name="groceryItem1" placeholder="Type item here">
-    </div>
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="styles.css">
+<head>
+  <meta charset="utf-8">
+  <title>Lincoln Grocery Delivery</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+  <div class="header">
+    <h2>Welcome</h2>
+  <div>
+
+<!--navigation bar-->
+  <div class="topnav">
+    <a href ="index.html">Home</a>
+    <a href ="contact.html">Contact Us</a>
+    <a href ="about.html">About Us</a>
+    <a href ="order.html">Buy Groceries!</a>
+  </div>
+<p>Thank you for your patience with the progression of the website and this grocery delivery service. If you encounter any errors, have questions
+  or would like to offer feedback to our service please visit our contact page. All your feedback is essential and greatly appreciated. Thank You!!
+</p>
+
+  <div class="flexbox_container">
+    <div class="flexbox_item">Sytling here</div>
+    <div class="flexbox_item">Sytling here</div>
+    <div class="flexbox_item">Sytling here</div>
+  </div>
+
+  <table>
+    <tr>
+        <td>May add a table item here</td>
+        <td>May add a table item here</td>
+    </tr>
+    <tr>
+        <td>and here</td>
+        <td>and here</td>
+    </tr>
+  </table>
+
+  <!-- form for quiz 4-->
+	<form id="form">
+    <legend >Feedback message</legend>
+    <table>
+      <tr>
+        <td><label for="message">Input a feedback message here:</label></td>
+        <td><input id="message" type="text" name="message"></td>
+      </tr>
+      <tr>
+        <td><label for="stars">Rate us out of 5 stars</label></td>
+        <td><input type="radio" id="oneStar" name="rating">1 Star</td>
+        <td><input type="radio" id="twoStar" name="rating">2 Star</td>
+        <td><input type="radio" id="threeStar" name="rating">3 Star</td>
+        <td><input type="radio" id="fourStar" name="rating">4 Star</td>
+        <td><input type="radio" id="fiveStar" name="rating">5 Star</td>
+      </tr>
+      <tr>
+        <td><label for="email">Please enter your email here:</label></td>
+        <td><input type="email" required></td>
+      </tr>
+      <tr>
+        <td><input type="submit" onclick="Myfunction" value="Submit your feedback"></td>
+        <td><input type="reset" value="Reset Form"></td>
+      </tr>
+    </table>
+  </form>
     
+  <script>
+    var form = document.getElementById('form')
+
+    form.addEventListener('submit', function(event)
+    {
+      event.preventDefault()
+
+      var message = document.getElementById('message').value
+      var email = document.getElementById('email').value
+
+      function Myfunction(){
+        alert(message + "  " + email)
+      }
+    })
+  </script>
+</body>
+</html>    
     <div>
       <label for="groceryItem2">Grocery Item 2 </label>
       <input type="text" id="groceryItem2" name="groceryItem2" placeholder="Type item here">
