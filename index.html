@@ -15,7 +15,102 @@
 <!--navigation bar-->
   <div class="topnav">
     <a href ="index.html">Home</a>
-    <a href ="contact.html">Contact Us</a>
+    <a href ="contact.html">Contact Us</a<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="styles.css">
+<head>
+  <meta charset="utf-8">
+  <title>Lincoln Grocery Delivery</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+  <div class="header">
+    <h2>Grocery Delivery Service</h2>
+  <div>
+    <h3><button id ="mybutton" onclick="myButtonFunction()">Enter Dark Mode</button></h3>
+
+<!--navigation bar-->
+  <div class="topnav">
+    <ul>
+      <li><a href ="index.html">Home</a></li>
+        <ul class="dropdown">
+          <li><a href="contact.html">Contact us</a></li>
+          <li><a href="about.html">About us</a></li>
+          <li><a href="order.html">Order from us</a></li>
+        </ul>
+      <li><a href ="contact.html">Contact Us</a></li>
+      <li><a href ="about.html">About Us</a></li>
+      <li><a href ="order.html">Buy Groceries!</a></li>
+    </ul>
+      
+  </div>
+
+  <div class="flexbox_container">
+    <div class="flexbox_item">Styling here</div>
+    <div class="flexbox_item">Styling here</div>
+    <div class="flexbox_item">Styling here</div>
+  </div>
+
+  <table>
+    <tr>
+        <td>May add a table item here</td>
+        <td>May add a table item here</td>
+    </tr>
+    <tr>
+        <td>and here</td>
+        <td>and here</td>
+    </tr>
+  </table>
+
+  <!-- form for quiz 4-->
+	<form id="form">
+    <legend >Feedback message</legend>
+    <table>
+      <tr>
+        <td><label for="message">Input a feedback message here:</label></td>
+        <td><input id="message" type="text" name="message"></td>
+      </tr>
+      <tr>
+        <td><label for="stars">Rate us out of 5 stars</label></td>
+        <td><input type="radio" id="oneStar" name="rating">1 Star</td>
+        <td><input type="radio" id="twoStar" name="rating">2 Star</td>
+        <td><input type="radio" id="threeStar" name="rating">3 Star</td>
+        <td><input type="radio" id="fourStar" name="rating">4 Star</td>
+        <td><input type="radio" id="fiveStar" name="rating">5 Star</td>
+      </tr>
+      <tr>
+        <td><label for="email">Please enter your email here:</label></td>
+        <td><input type="email" required></td>
+      </tr>
+      <tr>
+        <td><input type="submit" onclick="Myfunction" value="Submit your feedback"></td>
+        <td><input type="reset" value="Reset Form"></td>
+      </tr>
+    </table>
+  </form>
+    
+  <script>
+    var form = document.getElementById('form')
+
+    form.addEventListener('submit', function(event)
+    {
+      event.preventDefault()
+
+      var message = document.getElementById('message').value
+      var email = document.getElementById('email').value
+
+      function Myfunction(){
+        alert(message + "  " + email)
+      }
+    })
+
+    function myButtonFunction(){
+        document.body.style.background = "darkgrey";
+    }
+  </script>
+</body>
+</html>>
     <a href ="about.html">About Us</a>
     <a href ="order.html">Buy Groceries!</a>
   </div>
