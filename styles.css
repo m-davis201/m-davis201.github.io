@@ -5,7 +5,68 @@
 body {
   margin: 0;
   background-color:white;
-}
+}* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+  }
+
+  h2{
+    font-style: italic;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 60px;
+  }
+
+  legend{
+    color: white;
+  }
+  
+  /* Style the header */
+  .header {
+    padding: 30px;
+    text-align: center;
+  }
+  
+  /* Style the top navigation bar */
+  .topnav {
+    overflow: hidden;
+    background-color: rgb(60, 212, 238);
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  /* Style the topnav links */
+  .topnav a {
+    float: center;
+    color: #f2f2f2;
+    text-align: center;
+    display: inline;
+    padding: 14px 16px;
+    text-decoration: none;
+    margin: 100px;
+  }
+  
+  /* Change color on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+  
+  /* Flexbox display*/
+  .flexbox_container{
+    display:flex;
+    background-color:aqua;
+
+  }
+
+  .flexbox_item{
+    background-color: red;
+    margin:10px;
+    font-size: 10em;
+  }
 
 /* Style the header */
 .header {
