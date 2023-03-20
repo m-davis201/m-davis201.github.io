@@ -1,0 +1,99 @@
+.wrapper{
+    display: flex;
+    flex-flow: row wrap;
+    text-align: center;
+}
+
+.wrapper>*{
+    padding:10px;
+    margin: 10px;
+    flex: 1 100%;
+    border-radius: 10px;
+}
+
+.header{
+    background-color: red;
+    height: 160px;
+    font-family: monospace;
+}
+
+.main{
+    text-align: left;
+    background-color: black;
+    color: white;
+    height: 100px;
+}
+
+
+.footer{
+    background: grey;
+    height: 60px;
+
+}
+
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    list-style: none;
+
+}
+
+.navigation li a {
+    transition: all 0.3s ease 0s;
+    font-size: 25px;
+    color: darkgrey;
+}
+
+.navigation li a:hover {
+    color: white;
+}
+
+li a {
+    text-decoration: none;
+}
+
+.Hyvee{
+    background-color: red;
+}
+
+.SuperSaver{
+    background-color: yellow;
+}
+
+.aside1{
+    background-color: gold;
+}
+
+.aside2{
+    background-color: gold;
+}
+
+@media all and (min-width: 800px){
+    .main{
+        flex: 3;
+    }
+
+    .aside1{
+        order: 1;
+    }
+
+    .aside2{
+        order: 2;
+    }
+
+    .main{
+        order: 2;
+    }
+
+    .footer{
+        order: 4;
+    }
+}
+
+@media all and (min-width: 600px){
+    aside{
+        flex: 1;
+    }
+}
