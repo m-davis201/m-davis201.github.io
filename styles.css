@@ -1,3 +1,7 @@
+body{
+    background-image: url(grocery_cart.png);
+}
+
 .wrapper{
     display: flex;
     flex-flow: row wrap;
@@ -11,6 +15,13 @@
     border-radius: 10px;
 }
 
+.wrapper ul li ul{
+    text-align: center;
+    float: left;
+    position: relative;
+
+}
+
 .header{
     background-color: red;
     height: 160px;
@@ -22,12 +33,14 @@
     background-color: black;
     color: white;
     height: 100px;
+    padding: 100px;
 }
 
 
 .footer{
     background: grey;
     height: 60px;
+    margin-top: 400px;
 
 }
 
@@ -63,11 +76,11 @@ li a {
 }
 
 .aside1{
-    background-color: gold;
+    background-color: white;
 }
 
 .aside2{
-    background-color: gold;
+    background-color: white;
 }
 
 @media all and (min-width: 800px){
@@ -92,8 +105,30 @@ li a {
     }
 }
 
+@media all and (min-width: px){
+    .main{
+        flex: 3;
+    }
+
+    .aside1{
+        order: 1;
+    }
+
+    .aside2{
+        order: 2;
+    }
+
+    .main{
+        order: 2;
+    }
+
+    .footer{
+        order: 4;
+    }
+}
+
 @media all and (min-width: 600px){
-    aside{
+    .aside{
         flex: 1;
     }
 }
