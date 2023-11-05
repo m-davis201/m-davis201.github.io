@@ -1,12 +1,21 @@
 ul{
   display: flex;
+  justify-content: space-around;
   list-style-type: none;
   gap: 20px;
   background-color: blue;
   padding: 20px;
 }
+
+
 a {
   text-decoration: none;
-  color: black;
+  color: white;
   font-weight: 20
+}
+
+h1{
+  color: red;
+  display: flex;
+  justify-content: center;
 }
